@@ -11,9 +11,18 @@ height = 640
 
 [android]
 input_method = HiddenInputField
+package = com.defold.example.basic3d
 
 [project]
 dependencies = https://github.com/rgrams/rendercam/archive/v1.0.1.zip
+title = Basic 3D
 
 [physics]
 type = 3D
+
+[osx]
+bundle_identifier = com.defold.example.basic3d
+
+[ios]
+bundle_identifier = com.defold.example.basic3d
+

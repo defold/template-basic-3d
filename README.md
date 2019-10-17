@@ -12,4 +12,7 @@ If you run into trouble, help is available in [our forum](https://forum.defold.c
 
 Happy Defolding!
 
----
+## Credits
+
+* `RenderCam` camera implementation by Ross Grams
+* Cube texture by Kenney (https://www.kenney.nl)
