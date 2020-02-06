@@ -15,7 +15,7 @@ package = com.defold.example.basic3d
 
 [project]
 dependencies = https://github.com/rgrams/rendercam/archive/v1.0.1.zip
-title = Basic 3D
+title = Basic3D
 
 [physics]
 type = 3D
