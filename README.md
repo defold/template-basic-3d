@@ -15,4 +15,4 @@ Happy Defolding!
 ## Credits
 
 * `RenderCam` camera implementation by Ross Grams
-* Cube texture by Kenney (https://www.kenney.nl)
+* Textures by Kenney (https://www.kenney.nl)
