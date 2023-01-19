@@ -75,7 +75,7 @@ function update(self)
     render.disable_state(render.STATE_DEPTH_TEST)
     render.disable_state(render.STATE_CULL_FACE)
 
-    -- render sprites+ label + particles
+    -- render sprites, label, particles
     --
     render.set_blend_func(render.BLEND_SRC_ALPHA, render.BLEND_ONE_MINUS_SRC_ALPHA)
     render.enable_state(render.STATE_DEPTH_TEST)
@@ -83,7 +83,6 @@ function update(self)
     render.enable_state(render.STATE_BLEND)
     render.draw(self.tile_pred)
     render.draw(self.particle_pred)
-    render.disable_state(render.STATE_BLEND)
     render.disable_state(render.STATE_STENCIL_TEST)
     render.disable_state(render.STATE_DEPTH_TEST)
 
@@ -98,6 +97,7 @@ function update(self)
     render.enable_state(render.STATE_STENCIL_TEST)
     render.draw(self.gui_pred)
     render.draw(self.text_pred)
+    render.disable_state(render.STATE_BLEND)
     render.disable_state(render.STATE_STENCIL_TEST)
 end
 
