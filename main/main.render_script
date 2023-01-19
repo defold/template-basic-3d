@@ -71,14 +71,11 @@ function update(self)
     render.enable_state(render.STATE_DEPTH_TEST)
     render.set_depth_mask(true)
     render.draw(self.model_pred)
+    render.set_depth_mask(false)
     render.disable_state(render.STATE_DEPTH_TEST)
-    render.disable_state(render.STATE_CULL_FACE)    
+    render.disable_state(render.STATE_CULL_FACE)
 
-    -- debug rendering
-    --
-    render.draw_debug3d()
-
-    -- SPRITE + LABEL + PARTICLE 3d space
+    -- render sprites+ label + particles
     --
     render.set_blend_func(render.BLEND_SRC_ALPHA, render.BLEND_ONE_MINUS_SRC_ALPHA)
     render.enable_state(render.STATE_DEPTH_TEST)
@@ -89,7 +86,10 @@ function update(self)
     render.disable_state(render.STATE_BLEND)
     render.disable_state(render.STATE_STENCIL_TEST)
     render.disable_state(render.STATE_DEPTH_TEST)
-    
+
+    -- debug
+    render.draw_debug3d()
+
     -- render GUI
     --
     render.set_view(vmath.matrix4())
