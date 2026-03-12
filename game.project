@@ -16,6 +16,8 @@ package = com.defold.example.basic3d
 [project]
 dependencies = 
 title = Basic3D
+version = 1.1
+developer = Defold
 
 [physics]
 type = 3D
@@ -28,4 +30,9 @@ bundle_identifier = com.defold.example.basic3d
 
 [html5]
 scale_mode = stretch
+
+[render]
+clear_color_red = 0.160156
+clear_color_green = 0.164063
+clear_color_blue = 0.183594
 
