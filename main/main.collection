@@ -1,92 +1,16 @@
 name: "main"
 scale_along_z: 1
 embedded_instances {
-  id: "main"
+  id: "cube"
   data: "components {\n"
   "  id: \"cube\"\n"
   "  component: \"/assets/models/cube.model\"\n"
-  "  position {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "  property_decls {\n"
-  "  }\n"
   "}\n"
   "components {\n"
   "  id: \"main\"\n"
   "  component: \"/main/main.script\"\n"
-  "  position {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "  property_decls {\n"
-  "  }\n"
-  "}\n"
-  "components {\n"
-  "  id: \"quad\"\n"
-  "  component: \"/assets/models/quad.model\"\n"
-  "  position {\n"
-  "    x: 3.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "  property_decls {\n"
-  "  }\n"
-  "}\n"
-  "components {\n"
-  "  id: \"sphere\"\n"
-  "  component: \"/assets/models/sphere.model\"\n"
-  "  position {\n"
-  "    x: 1.5\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "  property_decls {\n"
-  "  }\n"
   "}\n"
   ""
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
 }
 embedded_instances {
   id: "camera"
@@ -96,38 +20,56 @@ embedded_instances {
   "  data: \"aspect_ratio: 1.0\\n"
   "fov: 0.7854\\n"
   "near_z: 0.1\\n"
-  "far_z: 1000.0\\n"
+  "far_z: 15.0\\n"
   "auto_aspect_ratio: 1\\n"
-  "orthographic_projection: 0\\n"
-  "orthographic_zoom: 1.0\\n"
   "\"\n"
-  "  position {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
   "}\n"
   ""
   position {
-    x: 0.0
-    y: 0.0
-    z: 10.0
+    y: 4.0
+    z: 6.0
   }
   rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
+    x: -0.3007058
+    w: 0.95371693
+  }
+}
+embedded_instances {
+  id: "plane"
+  data: "components {\n"
+  "  id: \"quad\"\n"
+  "  component: \"/assets/models/quad_2x2.model\"\n"
+  "}\n"
+  ""
+  position {
+    y: -1.5
+    z: -1.0
+  }
+  rotation {
+    x: -0.70710677
+    w: 0.70710677
   }
   scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
+    x: 4.0
+    y: 4.0
+    z: 4.0
   }
+}
+embedded_instances {
+  id: "spheres"
+  data: "components {\n"
+  "  id: \"right\"\n"
+  "  component: \"/assets/models/sphere.model\"\n"
+  "  position {\n"
+  "    x: 2.0\n"
+  "  }\n"
+  "}\n"
+  "components {\n"
+  "  id: \"left\"\n"
+  "  component: \"/assets/models/sphere.model\"\n"
+  "  position {\n"
+  "    x: -2.0\n"
+  "  }\n"
+  "}\n"
+  ""
 }
